@@ -1,7 +1,44 @@
-# Specifier
-A simple program written in AppleScript that gives detailed information about your Mac. Ever realised that the Monterey "About This Mac" was lackluster. Which was made even more lackluster in macOS Ventura. Well this simple little applet which is easily configurable using the pre-installed Script Editor is for you. I hope everyone who uses this little application enjoys it! 
+# <img src="https://github.com/Sienna7002/Specifier/assets/97623785/f0e561de-e492-47e0-b617-5635ef7edb5e" width="64px"/></img> <br> Specifier
+Welcome to Specifier! This simple application, written **100% in AppleScript** aims to provide a more robust and detailed way to display your Mac's specs! This application will show information than the stock About this Mac will not, such as your full CPU model information, (one of the reasons why this inspired me to create Specifier).
+<br>
+<br>
+Specifier uses shell commands to grab your Mac's specs, so editing and adding more options to Specifier is easy!
+<br>
+<br> 
+Specifier also (as of v2.1) has custom config support, making Specifer more configurable and powerful. To learn how to make Specifier configs + the syntax, jump [here](#specifier-configuration-files)
 # Screenshots
-<img width="280" alt="Screenshot 2022-12-30 at 19 21 06" src="https://user-images.githubusercontent.com/97623785/210105390-7742e66a-0140-4d42-8963-1b17693de6dc.png">
-<img width="431" alt="Screenshot 2022-12-30 at 19 21 31" src="https://user-images.githubusercontent.com/97623785/210105398-c28a7f6d-ae48-4f8c-89bb-0a07f9f10c48.png">
-<img width="432" alt="image" src="https://user-images.githubusercontent.com/97623785/210106095-95ce7ae4-bebd-4a88-81e9-dc5dda2f069b.png">
-Thats all to it!
+## Menu UI
+<img src="https://github.com/Sienna7002/Specifier/assets/97623785/3cae5638-9be9-4c94-a748-8b61fc45556b" alt="specifier-menu" width="300"></img>
+## Display all specs
+<img src="https://github.com/Sienna7002/Specifier/assets/97623785/95036d93-a2fe-4f55-9f51-90fd87601f81" alt="specifier-allspecs-menu" width="400"></img>
+## Custom config file option
+<img src="https://github.com/Sienna7002/Specifier/assets/97623785/4fd3442e-1e0d-4934-b26a-c86ec8c004b0" alt="example-specifier-config" width="400"/>
+<img src="https://github.com/Sienna7002/Specifier/assets/97623785/d82ac20b-00e4-4bd7-9b24-30e47aadcc5c" alt="specifier-configversion-menu" width="400"/>
+
+# Specifier configuration files
+Specifier config files add more support and customization to the application
+### How to get started
+- First of all, create a text file named `specifierconf.txt` in the macOS Applications folder
+- Then use the following syntax
+```
+ConfType= Specifier2.1+
+SpecifierArguments:
+{Your arguments go here}
+```
+Specifer currently supports these arguments `cpuModel=`, `gpuModel=`, `osVersion=`, `macModel=`, `macProcessor=`, `macMemory=`, `macDisplay=`, `macStorage=`
+<br>
+So therefore an example valid configuration would be
+```
+ConfType= Specifier2.1+
+SpecifierArguments:
+cpuModel=
+gpuModel=
+osVersion=
+macModel=
+macMemory=
+macStorage=
+```
+- Add your desired arguments to the config file and save
+- Run Specifier and choose <img width="200" alt="button" src="https://github.com/Sienna7002/Specifier/assets/97623785/420f0608-b09d-43dd-8920-4944225f274c"></img> from the menu
+- If all went well, your custom config will display like this! <br><img width="532" alt="image" src="https://github.com/Sienna7002/Specifier/assets/97623785/4b0141c7-3cd5-4523-8970-86432735793f"></img>
+
