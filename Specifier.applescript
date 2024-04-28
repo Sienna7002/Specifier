@@ -33,20 +33,20 @@ else if buttonReturned is "Run Specifier Configuration" then
 			do shell script "cat " & quoted form of posixPath
 		end readFile
 		on displayDialog(message)
-			display dialog message with title "Specifier - " & verString with icon stop buttons {"Quit"} default button 1
+			display dialog message with title "Specifier - " & verString with icon note buttons {"Quit"} default button 1
 		end displayDialog
 	end script
 	set configFilePath to (path to applications folder as text) & "specifierconf.txt"
 	if not utilities's fileExists(configFilePath) then
-		utilities's displayDialog("Error Code 01" & return & "The Specifier configuration file specifierconf.txt does not exist in the Applications folder. To get started, create or add the specifierconf.txt file in your Applications folder. For further help with this feature, check the Specifier GitHub readme for the config syntax.")
+		display dialog "Error Code 01" & return & "The Specifier configuration file specifierconf.txt does not exist in the Applications folder. To get started, create or add the specifierconf.txt file in your Applications folder. For further help with this feature, check the Specifier GitHub readme for the config syntax." with title "Specifier - " & verString with icon stop buttons {"Quit"} default button 1
 	else
 		set configFileContent to utilities's readFile(configFilePath)
 		
 		if configFileContent does not contain "ConfType= Specifier2.1+" then
-			utilities's displayDialog("Error Code 02" & return & "The Specifier configuration file is not in the correct format. For further help with this feature, check the Specifier GitHub readme for the config syntax.")
+			display dialog "Error Code 02" & return & "The Specifier configuration file is not in the correct format. For further help with this feature, check the Specifier GitHub readme for the config syntax." with title "Specifier - " & verString with icon stop buttons {"Quit"} default button 1
 		else
 			if configFileContent does not contain "SpecifierArguments:" then
-				utilities's displayDialog("Error Code 03" & return & "The Specifier configuration file is incomplete, please provide arguments. For further help with this feature, check the Specifier GitHub readme for the config syntax.")
+				display dialog "Error Code 03" & return & "The Specifier configuration file is incomplete, please provide arguments. For further help with this feature, check the Specifier GitHub readme for the config syntax." with title "Specifier - " & verString with icon stop buttons {"Quit"} default button 1
 			else
 				set cpuModelExists to 0
 				set gpuModelExists to 0
