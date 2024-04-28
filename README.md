@@ -16,7 +16,7 @@ Specifier also (as of v2.1) has custom config support, making Specifer more conf
 <img src="https://github.com/Sienna7002/Specifier/assets/97623785/d82ac20b-00e4-4bd7-9b24-30e47aadcc5c" alt="specifier-configversion-menu" width="400"/>
 
 # Specifier configuration files
-Specifier config files add more customization to the application, as they allow Specifier to show what specs you need, removing the clutter!
+Specifier config files adds more customization to the application, as they allow Specifier to show what specs you need, removing the clutter!
 ### How to get started
 - First of all, create a text file named `specifierconf.txt` in the macOS Applications folder
 - Then use the following syntax
