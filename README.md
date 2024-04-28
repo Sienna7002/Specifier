@@ -1,4 +1,4 @@
-# <img src="https://github.com/Sienna7002/Specifier/assets/97623785/f0e561de-e492-47e0-b617-5635ef7edb5e" width="64px"/></img> <br> Specifier <br> <img src="https://img.shields.io/github/languages/top/Sienna7002/Specifier?style=for-the-badge">
+# <img src="https://github.com/Sienna7002/Specifier/assets/97623785/f0e561de-e492-47e0-b617-5635ef7edb5e" width="64px"/></img> <br> Specifier <br> <img src="https://img.shields.io/github/languages/top/Sienna7002/Specifier?style=for-the-badge"> <img src="https://img.shields.io/github/v/release/Sienna7002/Specifier?style=for-the-badge">
 Welcome to Specifier! This simple application, written **100% in AppleScript** aims to provide a more robust and detailed way to display your Mac's specs! This application will show information that the stock About this Mac will not, such as your full CPU model information, (one of the reasons why this inspired me to create Specifier).
 <br>
 <br>
