@@ -45,7 +45,7 @@ macStorage
 - Run Specifier and choose <img width="200" alt="button" src="https://github.com/Sienna7002/Specifier/assets/97623785/420f0608-b09d-43dd-8920-4944225f274c"></img> from the menu
 - If all went well, your custom config will display like this! <br><img width="532" alt="image" src="https://github.com/Sienna7002/Specifier/assets/97623785/4b0141c7-3cd5-4523-8970-86432735793f"></img>
 ## Optional Headers + Report String
-With v2.2, new headers (`ConfDev=` , `ConfVer=`, `ConfName=` and `ConfDesignedFor=`) and report string modification support (`topString=`) was added, to use the new About Script feature, you need `ConfDesignedFor=`  below "ConfType=" in the config file, for an example this is a 2.2 compliant config.
+With v2.2, new headers (`ConfDev=` , `ConfVer=`, `ConfName=` and `ConfDesignedFor=`) and report string modification support (`topString=`) was added, to use the new About Config feature, you need `ConfDesignedFor=`  below "ConfType=" in the config file, for an example this is a 2.2 compliant config.
 ```
 ConfType= Specifier2.1+
 ConfDesignedFor= Specifier2.2
@@ -71,7 +71,7 @@ Here is what these new options look like when displayed on Specifer.
 Here is a bit more info on how to use these new features
 <br>
 - `topString=` allows the config developer to change the `Specifier reported your Mac's specs as:` to whatever they desire, a correct use of this would be `topString= "Here are your tech specs!"`
-- `ConfDev=` is a piece of metadata that contains the config developer, so it can be displayed on the About Script feature, a correct use of this would be `ConfDev= "Liam C."`
-- `ConfVer=` is a piece of metadata that contains the config version, so it can be displayed on the About Script feature, a correct use of this would be `ConfVer= "3.5"`
-- `ConfName=` is a piece of metadata that contains the config name, so it can be displayed on the About Script feature, a correct use of this would be `ConfName= "MegaConf!"`
-- `ConfDesignedFor=` is a piece of metadata that contains the Specifier version a config is designed for, so it can be displayed on the About Script feature, `ConfDesignedFor=` is also required to use the About Script feature, otherwise, you will get an Error Code 04. A correct use of this would be `ConfDesignedFor= Specifier2.2`. _**Do not change this if a sub update is released, for example, do not change `ConfDesignedFor= Specifier2.3` if Specifer 2.3.1 releases, change it when Specifier 2.4 releases.**_
+- `ConfDev=` is a piece of metadata that contains the config developer, so it can be displayed on the About Config feature, a correct use of this would be `ConfDev= "Liam C."`
+- `ConfVer=` is a piece of metadata that contains the config version, so it can be displayed on the About Config feature, a correct use of this would be `ConfVer= "3.5"`
+- `ConfName=` is a piece of metadata that contains the config name, so it can be displayed on the About Config feature, a correct use of this would be `ConfName= "MegaConf!"`
+- `ConfDesignedFor=` is a piece of metadata that contains the Specifier version a config is designed for, so it can be displayed on the About Config feature, `ConfDesignedFor=` is also required to use the About Config feature, otherwise, you will get an Error Code 04. A correct use of this would be `ConfDesignedFor= Specifier2.2`. _**Do not change this if a sub update is released, for example, do not change `ConfDesignedFor= Specifier2.3` if Specifer 2.3.1 releases, change it when Specifier 2.4 releases.**_
