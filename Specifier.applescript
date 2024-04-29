@@ -1,7 +1,7 @@
 -- Specifier 2.2 
 -- Compiled @ 29/4/2024
 -- By 7002_
-set verString to "v2.2"
+set verString to "v2.2.1"
 set longVer to "Specifier2.2"
 beep
 set buttonReturned to button returned of ¬
@@ -61,7 +61,7 @@ else if buttonReturned is "Run Specifier Configuration" then
 				set confVer to "Unknown"
 				set confName to "Untitled Configuration"
 				repeat with lineText in paragraphs of configFileContent
-					if lineText starts with "CPUModel=" then
+					if lineText starts with "CPUModel=" or lineText starts with "CPUModel" then
 						set cpuModelExists to 1
 					else if lineText starts with "GPUModel=" or lineText starts with "GPUModel" then
 						set gpuModelExists to 1
