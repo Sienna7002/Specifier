@@ -28,7 +28,7 @@ ConfType= Specifier2.1+
 SpecifierArguments:
 {Your arguments go here}
 ```
-Specifer currently supports these arguments `cpuModel`, `gpuModel`, `osVersion`, `macModel`, `macProcessor`, `macMemory`, `macDisplay`, `macStorage`
+Specifer currently supports these arguments `cpuModel`, `gpuModel`, `osVersion`, `macModel`, `macProcessor`, `macMemory`, `macDisplay`, `macStorage` and `topString=`
 <br>
 So therefore an example valid configuration would be
 ```
