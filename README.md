@@ -8,7 +8,7 @@ Specifier uses shell commands to grab your Mac's specs, so editing and adding mo
 Specifier also (as of v2.1) has custom config support, making Specifier more configurable and powerful. To learn how to make Specifier configs + the syntax, jump [here](#specifier-configuration-files)
 <br>
 <br>
-Due to not having the means of signing Specifier, you might encounter the error when downloading `“Specifier” is damaged and can’t be opened. You should move it to the Bin.`, The app should be perfectly fine howerver, as running the command `xattr -cr /Applications/Specifier.app in Terminal.app` generally fixes the problem
+Due to not having the means of signing Specifier, you might encounter the error when downloading `“Specifier” is damaged and can’t be opened. You should move it to the Bin.`, The app should be perfectly fine however, as running the command `xattr -cr /Applications/Specifier.app in Terminal.app` generally fixes the problem
 # Screenshots
 ## Menu UI
 <img src="https://github.com/Sienna7002/Specifier/assets/97623785/3cae5638-9be9-4c94-a748-8b61fc45556b" alt="specifier-menu" width="300"></img>
